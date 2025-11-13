@@ -6,7 +6,7 @@ Light Shades: #F9FAFA;
 Light Accent: #999997;
 Main Brand Color: #BB9771;
 Dark Accent: #8E8E8A;
-Dark Shades: 3A3939;
+Dark Shades: #3A3939;
 */
 
 .name {
@@ -17,4 +17,74 @@ Dark Shades: 3A3939;
 .pfp {
     display: inline-block;
     border-radius: 100%;
+}
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #BB9771;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+ul li {
+  float: left;
+  border-right: 1px solid #999997;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+.active {
+  background-color: #3A3939;
+  color: #BB9771;
+}
+.Tskills_c {
+    float: left;
+    width: 33.33%;
+}
+.NTskills_c {
+    float: left;
+    display: table;
+    width: 33.33%;
+}
+.NTskills_c {
+    float: left;
+    display: table;
+}
+
+.projects{
+    float: left;
+    display: table;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
