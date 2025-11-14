@@ -1,6 +1,9 @@
+/* GLOBAL RESET */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Color Palette:
 Light Shades: #F9FAFA;
 Light Accent: #999997;
@@ -9,81 +12,96 @@ Dark Accent: #8E8E8A;
 Dark Shades: #3A3939;
 */
 
-.name {
-    color:#BB9771;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:30px;
-}
-.pfp {
-    display: inline-block;
-    border-radius: 100%;
-}
-.navbar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* NAVIGATION BAR */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-  overflow: hidden;
-  background-color: #BB9771;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #BB9771;
 }
 
 ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #111111;
-}
-ul li {
-  float: left;
-  border-right: 1px solid #999997;
+    float: left;
+    border-right: 1px solid #999997;
 }
 
 ul li:last-child {
-  border-right: none;
-}
-.active {
-  background-color: #3A3939;
-  color: #BB9771;
-}
-.Tskills_c {
-    float: left;
-    width: 33.33%;
-}
-.NTskills_c {
-    float: left;
-    display: table;
-    width: 33.33%;
-}
-.NTskills_c {
-    float: left;
-    display: table;
+    border-right: none;
 }
 
-.projects{
-    float: left;
-    display: table;
-    width: 33.33%;
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+ul li a:hover {
+    background-color: #111111;
 }
-@media screen and (max-width: 600px) {
+
+.active {
+    background-color: #3A3939;
+    color: #BB9771;
+}
+
+/* HEADER INFO */
+.header-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    color: #BB9771;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/* PROFILE IMAGE */
+.pfp {
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+/* 3-COLUMN LAYOUT */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px;
+}
+
+.column {
+    width: 33%;
+    background-color: #F9FAFA;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #999997;
+}
+
+/* TEXT COLORS */
+h1, h2, h3 {
+    color: #3A3939;
+}
+
+p, li {
+    color: #3A3939;
+}
+
+/* LIST SPACING */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    
     .column {
         width: 100%;
     }
