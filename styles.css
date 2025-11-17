@@ -1,18 +1,15 @@
-/* GLOBAL RESET */
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Color Palette:
 Light Shades: #F9FAFA;
 Light Accent: #999997;
 Main Brand Color: #BB9771;
-Dark Accent: #8E8E8A;
+Dark Accent: #000000;
 Dark Shades: #3A3939;
 */
 
-/* NAVIGATION BAR */
 ul {
     list-style-type: none;
     margin: 0;
@@ -48,8 +45,7 @@ ul li a:hover {
     color: #BB9771;
 }
 
-/* HEADER INFO */
-.header-section {
+.header {
     text-align: center;
     padding: 20px;
 }
@@ -60,48 +56,50 @@ ul li a:hover {
     margin-top: 10px;
 }
 
-/* PROFILE IMAGE */
 .pfp {
-    border-radius: 100%;
+    border-radius: 50%;
     margin-top: 10px;
+    width: 135px;
+    height: 135px;
 }
 
-/* 3-COLUMN LAYOUT */
 .row {
     display: flex;
-    justify-content: space-between;
-    gap: 25px;
+    gap: 15px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .column {
-    width: 33%;
-    background-color: #F9FAFA;
+    flex: 1;
+    min-width: 250px;
+    background-color: #BB9771;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px #999997;
 }
 
-/* TEXT COLORS */
 h1, h2, h3 {
     color: #3A3939;
 }
 
 p, li {
-    color: #3A3939;
+    color: #000000;
 }
 
-/* LIST SPACING */
 ul li {
     margin-bottom: 8px;
 }
-
-/* RESPONSIVE */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3A3939;
+    color: #BB9771;
+    border-radius: 10px;
+    margin-top: 20px;
+    clear: both;
+}
 @media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-    
     .column {
         width: 100%;
     }
