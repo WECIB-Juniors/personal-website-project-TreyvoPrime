@@ -73,11 +73,15 @@ ul li a:hover {
 .column {
     flex: 1;
     min-width: 250px;
-    background-color: #BB9771;
+    background-color:  #999997;
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 0 10px #999997;
 }
+ 
+  .column:nth-child(odd) {
+    background-color:#BB9771; /* Blue */
+  }
 
 h1, h2, h3 {
     color: #3A3939;
@@ -96,8 +100,6 @@ footer {
     background-color: #3A3939;
     color: #BB9771;
     border-radius: 10px;
-    margin-top: 20px;
-    clear: both;
 }
 @media screen and (max-width: 700px) {
     .column {
