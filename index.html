@@ -1,109 +1,84 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-/* Color Palette:
-Light Shades: #F9FAFA;
-Light Accent: #999997;
-Main Brand Color: #BB9771;
-Dark Accent: #000000;
-Dark Shades: #3A3939;
-*/
+<body>
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-    overflow: hidden;
-    background-color: #BB9771;
-}
+    <nav>
+        <ul>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="interest.html" class="active">Interest</a></li>
+        </ul>
+    </nav>
 
-ul li {
-    float: left;
-    border-right: 1px solid #999997;
-}
+    <section class="header">
+        <h1>About Me</h1>
+        <img src="PFP.jpg" alt="Profile Picture" class="pfp">
+        <h2 class="name">Name: Treyvon Pearson</h2>
+        <p><b>School Email:</b> tpearson3@my.waketech.edu</p>
+        <p><b>Personal Email:</b> trey2044@outlook.com</p>
+        <p><b>Instagram:</b> @treyvoprime</p>
+        <p><b>Tiktok:</b> @kentexstudios</p>
+        <p><b>Discord:</b> frxe_ee</p>
+        <p><b>Snapchat:</b> optimusprimeo9</p>
+    </section>
 
-ul li:last-child {
-    border-right: none;
-}
+    <div class="row">
+        <div class="column">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Network+ (Networking Implementation Skills)</li>
+                <li>CCST (Cisco Technologies Skills)</li>
+                <li>PCAP (Python Coding Skills)</li>
+                <li>ITS (Information Technologies Skills)</li>
+            </ul>
 
-ul li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
+            <h3>Non-Technical Skills</h3>
+            <ul>
+                <li>Collaboration Skills</li>
+                <li>Presentation Skills</li>
+                <li>Communication Skills</li>
+                <li>Study Skills</li>
+            </ul>
+        </div>
 
-ul li a:hover {
-    background-color: #111111;
-}
+        <div class="column">
+            <h3 class="bio">Bio</h3>
+            <p>
+                Hello, I am Treyvon Pearson. I am a student attending Wake Early College of Information 
+                and Biotechnology. My goals are to advance my skills in the IT field, specifically in 
+                programming, cybersecurity, game development, and technologies that impact everyday life.
+            </p>
+            <p>
+                Some of my hobbies are editing, coding, gaming, flying drones, and playing basketball. 
+                I use my DJI Mini drone to take pictures of my surroundings.
+            </p>
+            <p>
+                I like to game as well. Some of my favorite games are Hearts of Iron IV, Victoria 3, 
+                Age of History 2, Roblox, and Minecraft. Age of History 2 is my most-played game with 
+                over 500 hours. I’m planning to get Europa Universalis 5 soon.
+            </p>
+        </div>
 
-.active {
-    background-color: #3A3939;
-    color: #BB9771;
-}
+        <div class="column">
+            <h3>Projects</h3>
+            <ul>
+                <li>Logo Improvement Project – Improving the American Greens logo.</li>
+                <li>Chesapeake Bay Awareness Project – Promoting awareness of species decline.</li>
+                <li>Python Final Project – A program for generating customizable shapes.</li>
+            </ul>
+        </div>
+    </div> <!-- End of row -->
 
-.header {
-    text-align: center;
-    padding: 20px;
-}
+    <footer>
+        © 2025, Treyvon Pearson. trey2044@outlook.com
+    </footer>
 
-.name {
-    color: #BB9771;
-    font-size: 30px;
-    margin-top: 10px;
-}
-
-.pfp {
-    border-radius: 50%;
-    margin-top: 10px;
-    width: 135px;
-    height: 135px;
-}
-
-.row {
-    display: flex;
-    gap: 15px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    min-width: 250px;
-    background-color:  #999997;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px #999997;
-}
- 
-  .column:nth-child(odd) {
-    background-color:#BB9771; /* Blue */
-  }
-
-h1, h2, h3 {
-    color: #3A3939;
-}
-
-p, li {
-    color: #000000;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #3A3939;
-    color: #BB9771;
-    border-radius: 10px;
-}
-@media screen and (max-width: 700px) {
-    .column {
-        width: 100%;
-    }
-}
+</body>
+</html>
 
