@@ -80,7 +80,7 @@ ul li a:hover {
 }
  
   .column:nth-child(odd) {
-    background-color:#BB9771; /* Blue */
+    background-color:#BB9771;
   }
 
 h1, h2, h3 {
